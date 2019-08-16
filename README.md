@@ -73,3 +73,11 @@ The repo knows how to translate the data store into nromal C# objects.
 #### CRUD repos
 
 Create, read, update, delete
+
+The `interface segerattuion princopl` says an interface should only contain what the client needs.
+
+Since the client only needs Read operations, our interface should only have read operations
+
+### Reducing coupling with DI
+
+We don't want to maintain the lifecycle of the data access object. We can pass on that responsibility by using ocntructor injection.
