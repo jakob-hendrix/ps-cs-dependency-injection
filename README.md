@@ -83,3 +83,9 @@ Since the client only needs Read operations, our interface should only have read
 ### Reducing coupling with DI
 
 We don't want to maintain the lifecycle of the data access object. We can pass on that responsibility by using ocntructor injection.
+
+### Bootstrappers
+
+Bootstrappers are responsible for starting the application. This should be seperate form the view, so the view could be used by ,multiple bootstrappers.
+
+Another level of decomp.
