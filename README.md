@@ -56,6 +56,8 @@ And, if we have to add new data sources, the the `PeopleViewModel` has to be exp
 1. Use constructor injection
 1. snap the loosly coupled pieces (object composition)
 
+Decompose into abstract bits. Inject those bits via contructors from the object that wants to be resposnible for the lifetime of the dependecy.
+
 ### New features
 
 1. ability to change the data source
