@@ -50,3 +50,26 @@ Every instance of `new` implies:
 
 And, if we have to add new data sources, the the `PeopleViewModel` has to be expanded to allow for each new type, breaking the **Single Responsiblty** principle.
 
+## Implementing DI
+
+1. Break tight coupling by adding abstraction via interfaces
+1. Use constructor injection
+1. snap the loosly coupled pieces (object composition)
+
+### New features
+
+1. ability to change the data source
+1. option of client side cache
+1. unit tests
+
+### Repository pattern
+
+The `prepository pattern` mediated between the domain and the data mapping layers using a collection-like interface for accessing domain objects
+
+> application <-> repository <-> data store
+
+The repo knows how to translate the data store into nromal C# objects.
+
+#### CRUD repos
+
+Create, read, update, delete
