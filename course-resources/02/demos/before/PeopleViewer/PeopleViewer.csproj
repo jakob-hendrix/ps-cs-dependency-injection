@@ -89,6 +89,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\04\demos\before\PersonDataReader.CSV\PersonDataReader.CSV.csproj">
+      <Project>{9C2A2CA8-73DB-4711-88A0-5CFFD46DDA35}</Project>
+      <Name>PersonDataReader.CSV</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PeopleViewer.Common\PeopleViewer.Common.csproj">
       <Project>{5d9d9be8-9c6a-4655-9695-99942577a1d2}</Project>
       <Name>PeopleViewer.Common</Name>
