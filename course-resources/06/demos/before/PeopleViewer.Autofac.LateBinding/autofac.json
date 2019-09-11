@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "type": "PersonDataReader.Service.ServiceReader, PersonDataReader.Service",
+      "type": "PersonDataReader.Service.CSVReader, PersonDataReader.CSV",
       "services": [
         {
           "type": "PeopleViewer.Common.IPersonReader, PeopleViewer.Common"

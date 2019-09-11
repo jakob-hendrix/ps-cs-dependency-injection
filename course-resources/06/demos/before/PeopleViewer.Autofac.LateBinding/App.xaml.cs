@@ -21,10 +21,14 @@ namespace PeopleViewer.Autofac.LateBinding
 
         private void ConfigureContainer()
         {
+            // create a config builder
             var config = new ConfigurationBuilder();
             config.AddJsonFile("autofac.json");
 
+            // build the configuration
             var module = new ConfigurationModule(config.Build());
+
+            // register ocnfig builder with the builder
             var builder = new ContainerBuilder();
             builder.RegisterModule(module);
 
