@@ -118,6 +118,11 @@
       <Name>PersonDataReader.SQL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac">
+      <Version>4.9.4</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(SolutionDir)AdditionalFiles\*.*" "$(TargetDir)" /Y
